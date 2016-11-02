@@ -1,0 +1,9 @@
+*.pyc
+*.pyo
+*.egg-info
+*.DS_Store
+._*
+node_modules
+include
+lib
+pip-selfcheck.json
