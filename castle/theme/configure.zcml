@@ -1,0 +1,26 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:cmf="http://namespaces.zope.org/cmf"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="diazotheme.test">
+
+  <include package=".tiles" />
+
+  <genericsetup:registerProfile
+      name="default"
+      title="Castle Theme"
+      directory="profiles/default"
+      description="Extension profile for Castle Theme Package"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+  <plone:static
+    directory="theme_resources"
+    type="theme"
+    name="castle.theme"
+    />
+
+</configure>

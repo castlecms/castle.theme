@@ -1,0 +1,21 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="castle.cms.layouts">
+
+  <include package="plone.app.tiles" />
+
+  <plone:tile
+    name="castle.cms.feature"
+    title="Feature item"
+    class=".feature.FeatureTile"
+    schema=".feature.IFeatureTileSchema"
+    for="*"
+    layer="castle.cms.interfaces.ICastleLayer"
+    add_permission="cmf.ModifyPortalContent"
+    template="templates/feature.pt"
+    permission="zope2.View"
+    />
+</configure>

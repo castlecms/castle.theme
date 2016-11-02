@@ -1,0 +1,15 @@
+<div id="cover-img">
+  <div class="castle-container">
+    <div class="inner-content">
+      <h1 class="inverse">Welcome to Castle CMS</h1>
+      <div class="presented-by">Presented by Wildcard</div>
+      <p class="lead">
+        The powerful and extraordinarily secure content management experience.
+      </p>
+      <div class="action-buttons">
+      	<a href="#" class="scroll btn btn-primary" data-attr-scroll="demo">Book a Demo</a>
+      	<a href="#" class="scroll btn btn-link" data-attr-scroll="main-content">Learn More<span class="icon icon-arrow-down"></span></a>
+      </div>
+    </div>
+  </div>
+</div>

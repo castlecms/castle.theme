@@ -1,0 +1,55 @@
+<div tal:define="image python: view.get_icon();
+                 video python: view.get_video();
+                 tile_youtube_url python: view.data.get('youtube_url');
+                 has_video python: video or tile_youtube_url"
+     class="feature-tile-container">
+
+  <div class="feature-tile-item">
+    <div class="feature-tile-content">
+      <div class="feature-tile-icon">
+        <img tal:attributes="src python: view.get_icon_path()" alt="${view/getTitle}"/>
+      </div>
+      <div class="feature-tile-title">
+        ${view/data/title|nothing}
+      </div>
+    </div>
+  </div>
+
+  <div class="feature-tile-expanded-container row">
+    <div class="feature-tile-text col-md-5"
+         tal:attributes="class python: has_video and 'feature-tile-text col-md-5' or 'feature-tile-text col-md-12'"
+         tal:content="structure view/data/text/output|nothing">
+    </div>
+    <div class="feature-tile-video col-md-7" tal:condition="has_video">
+      <p tal:condition="video">
+        <tal:container
+          tal:define="youtube_url python: view.utils.get_youtube_url(video);
+                      content_type video/file/contentType|nothing;
+                      download_url string:${video/absolute_url}/@@download/file/${video/file/filename};
+                      has_image python: view.utils.has_image(video);">
+          <video controls="controls" preload="none" class="pat-video"
+                 tal:condition="not: youtube_url"
+                 width="${view/data/width|string:100%}"
+                 height="${view/data/height|string:400px}"
+                 tal:attributes="poster python: has_image and view.utils.get_scale_url(video, 'large')"
+                 tal:define="subtitles nocall: video/subtitle_file|nothing;">
+            <source tal:attributes="src download_url; type content_type"></source>
+            <track kind="subtitles" src="${video/absolute_url}/@@view/++widget++form.widgets.subtitle_file/@@download"
+                   srclang="en" tal:condition="subtitles" />
+          </video>
+          <iframe tal:condition="youtube_url"
+                  width="${view/data/width|string:100%}"
+                  height="${view/data/height|string:400px}"
+                  src="${youtube_url}" frameborder="0" allowfullscreen=""></iframe>
+        </tal:container>
+      </p>
+      <p tal:condition="python: tile_youtube_url and not video">
+        <iframe src="${python: view.utils.get_youtube_url(tile_youtube_url)}"
+                frameborder="0" allowfullscreen=""
+                width="${view/data/width|string:100%}"
+                height="${view/data/height|string:400px}"></iframe>
+      </p>
+    </div>
+  </div>
+
+</div>

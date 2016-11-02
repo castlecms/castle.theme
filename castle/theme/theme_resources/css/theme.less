@@ -1,0 +1,701 @@
+@import 'bootstrap/bootstrap';
+
+/* Table of content
+-----------------------------------------------
+1. Typography & Links
+2. Containers
+3. Header
+4. Navigation
+5. Body Content
+6. Footer
+7. Buttons
+8. Form Elements
+8. Tables
+9. Helper Classes
+10. Comments
+11. Icons
+*/
+
+// TYPOGRAPHY & LINKS
+// --------------------------------------------------
+
+html, body{
+  font-size:100%;
+  padding:0;
+  margin:0;
+}
+body{
+  font-family:@font-family-base;
+  font-weight:400;
+  color:#000;
+}
+
+hr{
+  border-top:1px solid #ddd;
+  margin-top:50px;
+  margin-bottom:50px;
+}
+
+p{
+  font-weight: 400;
+  font-size:1em;
+  line-height: 1.625em;
+}
+
+ul, ol{
+  font-size:1em;
+  line-height: 1.625em;
+}
+
+h2,h3,h4{
+  color:@brand-primary;
+}
+
+h2{
+  margin-bottom:50px;
+}
+h3{
+  margin-bottom:25px;
+}
+h4{
+  margin-bottom:18px;
+}
+
+
+blockquote{
+  color:#333;
+  border-left:none;
+  line-height: 34px;
+  text-align: center;
+}
+
+a {
+  color: @link-color;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+a:hover,
+a:focus {
+  color: @link-hover-color;
+  text-decoration: underline;
+}
+
+a:focus {
+  outline: 1px dotted @brand-primary;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+.documentFirstHeading{
+  margin-top:10px;
+}
+
+.lead{
+  font-family:@font-family-base;
+  font-weight:400;
+  font-size:28px;
+  margin:22px 0;
+}
+
+
+// CONTAINERS
+// ------------------------------------------------
+body > .wrap {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding:0;
+  margin-top:-1px;
+}
+
+.castle-container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left:15px;
+  padding-right:15px;
+  padding:0;
+  padding-top:1px;      //fixes weird gap at top
+}
+
+#main-content-container{
+  max-width:1200px;
+  margin:25px auto;
+}
+
+// HEADER
+// --------------------------------------------------
+
+
+
+// NAVIGATION
+// --------------------------------------------------
+.navbar > .container-fluid .navbar-brand{
+  margin-left:0;
+}
+
+.navbar.navbar-default{
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  margin:0 auto;
+  padding-top: 20px;
+  border-radius:0;
+  z-index:1;
+
+  .container-fluid{
+    padding:10px 15px;
+    max-width:1200px;
+  }
+}
+
+/* toolbar location fix */
+body.toolbar-initialized {
+  > .wrap {
+    margin-left: 190px;
+    margin-top: 55px;
+    width: auto;
+  }
+  .navbar-default{
+    top: 0;
+  }
+}
+
+
+.nonfrontpage-layout .navbar.navbar-default{
+  position:relative;
+  padding-top:15px;
+}
+
+.navbar-brand{
+  height:auto;
+  padding:0;
+  margin-top:-10px;
+
+  img{
+    height:70px;
+    width:auto;
+    margin-right:20px;
+  }
+}
+
+.nav#portal-globalnav{
+  float:left;
+  margin-left:0px;
+}
+
+.nav, .navbar-default .navbar-nav{
+  margin-top:0;
+  height:@navbar-height;
+  color:#000;
+
+  > li{
+    display:inline-block;
+
+    > a{
+      color:#000;
+      height:100%;
+      padding: 0;
+      margin:0 15px;
+      font-size: 1.125em;
+      font-weight: 400;
+      text-transform: uppercase;
+      line-height: 2.75em;
+      letter-spacing: 0.04em;
+      transition:all 0.5s;
+
+      &:hover, &:focus{
+        background:transparent;
+        border-bottom:1px solid #000;
+        color:#000;
+      }
+    }
+  }
+}
+
+//search
+.navbar-form{
+  margin-top:10px;
+
+  input[type="search"]{
+    border:1px solid #dedede;
+  }
+
+  .input-group-sm > .input-group-btn > .btn{
+    border:1px solid #dedede;
+    padding:5px;
+
+    &:hover, &:focus{
+      background:#2392d0;
+      border:1px solid #fff;
+      box-shadow: none;
+
+      .icon-search::before{
+        content: url("../icons/icon-searchbar.svg");
+      }
+    }
+  }
+
+  .icon.icon-search {
+    color: #fff;
+    background: none;
+    z-index: 90;
+    font-size: 16px;
+    margin-left:0.2em;
+
+    &::before{
+      content: url("../icons/icon-searchbar-hover.svg");
+    }
+  }
+}
+
+#theme-search{
+    margin-bottom:0;
+}
+
+// BODY CONTENT
+// --------------------------------------------------
+
+.portalMessage{
+  max-width: 1200px;
+  margin: 15px auto;
+}
+
+.castle-summary{
+  font-size:24px;
+  line-height: 1.6em;
+  margin:0 auto;
+  width:85%;
+  text-align: center;
+}
+
+// Breadcrumbs
+// -----------------
+// pull in bootstrap breadcrumbs with plone generated classes
+#portal-breadcrumbs .breadcrumbs {
+  .breadcrumb();
+  padding:8px 30px;
+}
+
+// FOOTER
+// --------------------------------------------------
+
+.global-footer{
+  font-family:@font-family-base;
+  background:@brand-primary;
+
+  a{
+    color:#fff;
+    text-decoration:none;
+    opacity:1;
+    transition: opacity 0.3s;
+
+    &:hover, &:active{
+      opacity:0.75;
+    }
+  }
+
+  h2,h3,h4,h5,h6{
+    color:#fff;
+    font-family:@font-family-base;
+    margin-bottom:25px;
+  }
+
+  p, ul{
+    color:#fff;
+    font-family:@font-family-base;
+  }
+
+  ul{
+    list-style:none;
+    padding:0;
+
+    li{
+      margin-bottom:15px;
+    }
+
+    &.footer-contact{
+      > li .icon{
+          margin:0 10px 0 0;
+      }
+    }
+
+    &.social-icons{
+      li{
+        display:inline-block;
+      }
+    }
+  }
+
+  .btn-ghost{
+    position:absolute;
+    right:50px;
+    bottom:75px;
+    padding:4px;
+
+    .icon{
+      margin:0;
+    }
+  }
+
+  .form-group, .input-group{
+    width:100%;
+  }
+}
+
+#footer-container{
+  max-width:1200px;
+  margin:50px auto 0;
+  padding:20px 0;
+}
+
+// BUTTONS
+// --------------------------------------------------
+
+.btn{
+  font-family:@font-family-base;
+  font-weight:500;
+  color:#fff;
+  padding: 8px 14px;
+  font-size: 18px;
+  letter-spacing: 0.025em;
+  border-radius: 0;
+  transition: background-color 0.3s;
+}
+
+.btn-primary{
+  background-color: #6fab52;
+  border:none;
+
+  &:hover, &:focus{
+    background-color:darken(#6fab52,5%);
+  }
+}
+
+.btn-ghost{
+  background-color:transparent;
+  border:2px solid #fff;
+
+  &:hover, &:focus{
+    color:#141414;
+    background-color:#fff;
+  }
+}
+
+.btn-link{
+  color:#fff;
+
+  &:hover, &:focus{
+    color:#fff;
+    text-decoration:underline;
+  }
+}
+
+// FORM ELEMENTS
+// --------------------------------------------------
+
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  vertical-align: middle;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  padding: 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea {
+  color: #666;
+  padding: 3px 6px;
+  box-shadow: none;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+textarea:focus {
+  color: #333;
+  outline:1px solid @brand-primary;
+}
+
+textarea {
+  overflow: auto; /* Removes default vertical scrollbar in IE6/7/8/9 */
+  padding: 6px;
+  vertical-align: top; /* Improves readability and alignment in all browsers */
+  width: 100%;
+}
+
+label > .label{
+  font-size:inherit;
+}
+
+input[type="text"], input[type="email"], input[type="password"], textarea, select{
+  border-radius:0;
+  min-height: 41px;
+}
+input[type="search"]{
+  border-radius:0;
+  height:35px;
+}
+
+.input-group-sm .form-control, .input-group-sm > .input-group-btn > .btn{
+  border-radius:0;
+}
+
+
+// TABLES
+// --------------------------------------------------
+
+
+// MODALS
+// --------------------------------------------------
+
+.castle-modal-wrapper,
+.plone-modal-wrapper,
+.mosaic-modal-wrapper {
+  h1.documentFirstHeading{
+    font-size:30px;
+    text-align: left;
+  }
+}
+
+
+// HELPER CLASSES
+// --------------------------------------------------
+
+.inverse{
+  color:#fff;
+}
+
+.text-center{
+  text-align: center;
+}
+
+
+// ICONS
+// --------------------------------------------------
+
+.share-buttons-tile [class*="webicon"], .icon{
+  width: 1.5em;
+  height: 1.5em;
+  display: inline-block;
+  text-align: center;
+  margin: 0 0.1em 0 0.7em;
+  vertical-align: -0.3em;
+}
+
+.icon-bar::before{
+  content:"";
+}
+
+.icon-arrow-down::before{
+  content: url("../icons/icon-arrow-down.svg");
+}
+
+.icon-arrow-top::before{
+  content: url("../icons/icon-arrow-top.svg");
+}
+
+a:hover .icon-arrow-top::before, .icon-arrow-top:hover::before, .active .icon-arrow-top::before {
+  content: url("../icons/icon-arrow-top-hover.svg");
+}
+
+.webicon.twitter{
+  content: url("../icons/icon-twitter.svg");
+}
+
+.webicon.facebook{
+  content: url("../icons/icon-facebook.svg");
+}
+
+.webicon.mail{
+  content: url("../icons/icon-email.svg");
+}
+
+.webicon.print{
+  content: url("../icons/icon-print.svg");
+}
+
+.webicon.share{
+  content: url("../icons/icon-share.svg");
+}
+
+/*footer icons*/
+
+.icon-phone::before{
+  content:url("../icons/icon-footer-phone.svg");
+}
+.icon-email::before{
+  content:url("../icons/icon-footer-email.svg");
+}
+.icon-footer-fb::before{
+  content:url("../icons/icon-footer-fb.svg");
+}
+.icon-footer-twitter::before{
+  content:url("../icons/icon-footer-twitter.svg");
+}
+.icon-footer-linkedin::before{
+  content:url("../icons/icon-footer-linkedin.svg");
+}
+
+// TILES
+// --------------------------------------------------
+
+//feature tile
+.feature-tile-row{
+  max-width:1200px;
+  margin:15px auto 0;
+}
+
+.feature-tile-title{
+  line-height: 1.4em;
+}
+
+.feature-tile-expanded-container, .feature-tile-expanded-container.row{
+  padding:30px 20px 20px;
+}
+
+.mosaic-width-full{
+  padding-left:0;
+  padding-right:0;
+}
+
+// MEDIA QUERIES
+// --------------------------------------------------
+
+@media only screen and (max-width:1400px){
+  .feature-tile-expanded-container, .feature-tile-expanded-container.row{
+    margin:0 15px;
+  }
+
+  .wrap{
+    div.mosaic-blue-background{
+      margin-left:-15px;
+      margin-right:-15px;
+    }
+
+    div.mosaic-row-narrow{
+      margin:0 15px;
+    }
+  }
+
+  #footer-container{
+    padding:15px;
+  }
+}
+
+@media only screen and (min-width:1200px) and (max-width:1400px){
+  div.mosaic-width-full{
+    padding-left:15px;
+    padding-right:15px;
+  }
+}
+
+@media only screen and (max-width:1200px){
+
+  .castle-container{
+    padding-left:15px;
+    padding-right:15px;
+  }
+
+  div#cover-img .inner-content{
+    width:90%;
+    top:200px;
+
+    h1.inverse{
+      font-size:40px;
+    }
+    p.lead{
+      font-size:24px;
+    }
+  }
+
+  #footer-container{
+    padding:20px 15px;
+  }
+}
+
+@media only screen and (max-width:992px){
+  .feature-tile-row>.mosaic-grid-cell[class*="col"]:last-child{
+    padding-right:0;
+  }
+}
+
+@media only screen and (max-width:768px){
+  h2{
+    margin-bottom:30px;
+  }
+
+  .navbar > .container-fluid .navbar-brand{
+    margin-left:15px;
+  }
+
+  .navbar-default .navbar-toggle{
+    background-color:none;
+    border-color:#333;
+    margin-top:0;
+    transition:opacity 0.5;
+    opacity:1;
+
+    &:hover{
+      background-color:none;
+      opacity:0.8;
+    }
+
+    .icon-bar{
+      background-color:#333;
+    }
+  }
+
+  .navbar-collapse{
+    background:#fff;
+    //opacity:0.85;
+    margin-top:15px;
+
+    .nav{
+      a{
+        color:#333;
+
+        &:hover, &:focus{
+          color:#ababab;
+          outline:none;
+          border:none;
+        }
+      }
+
+      > li{
+        display:block;
+      }
+    }
+
+    .navbar-form{
+      position: relative;
+      top:15px;
+
+      input[type="search"]{
+        border:1px solid #dedede;
+        color:#333;
+      }
+    }
+  }
+  .nav#portal-globalnav{
+    float:none;
+  }
+}

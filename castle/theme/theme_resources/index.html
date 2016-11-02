@@ -1,0 +1,104 @@
+<!doctype html>
+<html class="no-js" lang="en" data-gridsystem="bs3">
+<head>
+  <meta charset="utf-8"/>
+  <link data-tile="${context_url}/@@castle.cms.metadata"/>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link data-include-css />
+
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,500,600,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,600italic,700,700italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/plone.css?v=2" />
+  <link rel="stylesheet" href="css/theme.css?v=2" />
+
+  <link data-include-js />
+
+</head>
+<body class="nonfrontpage-layout">
+  <div data-tile="${context_url}/@@plone.app.standardtiles.toolbar" />
+
+  <div class="wrap">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../"
+             data-tile="${portal_url}/@@fragment?name=logo_"><img src="img/castle-logo.svg" /></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav" data-tile="${portal_url}/@@fragment?name=mainlinks"></ul>
+          <form class="navbar-form navbar-right" action="${portal_url}/@@search" data-tile="${portal_url}/@@fragment?name=search">
+            <div class="form-group">
+              <label for="theme-search" class="sr-only">Search</label>
+              <div id="theme-search" class="input-group input-group-sm">
+                <input type="search" class="form-control" id="search-input" name="SearchableText" placeholder="Search">
+                <span class="input-group-btn">
+                  <button class="btn btn-default" type="button"><span class="fa fa-search"></span></button>
+                </span>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="castle-container">
+      <div class="row">
+        <div class="col-md-12">
+          <div id="site-announcement" data-tile="${context_url}/@@fragment?name=announcement">
+          </div>
+
+          <div data-tile="${context_url}/@@castle.cms.meta/meta-top"></div>
+          <div data-tile="${context_url}/@@plone.app.standardtiles.global_statusmessage"></div>
+          <div data-tile="${context_url}/@@plone.app.standardtiles.lockinfo"></div>
+
+          <div data-tile="${context_url}/@@plone.app.standardtiles.viewletmanager/below-content?manager=plone.abovecontentbody"></div>
+        </div>
+      </div>
+
+      <!-- Main Content -->
+      <div class="row" id="main-content-container" dynamic-grid>
+         <div id="portal-column-one"
+              col-count-1="12" col-count-2="3" col-count-3="3">
+          ${structure: content.left}
+          <div data-tile="${context_url}/@@castle.cms.meta/meta-left"></div>
+        </div>
+        <div id="main-content"
+             col-count-1="12" col-count-2="9" col-count-3="6">
+          <div data-tile="${context_url}/@@castle.cms.meta/meta-above-content"></div>
+          ${structure: content.main}
+          <div data-tile="${context_url}/@@castle.cms.meta/meta-below-content"></div>
+        </div>
+        <div id="portal-column-two"
+             col-count-1="12" col-count-2="3" col-count-3="3">
+          ${structure: content.right}
+          <div data-tile="${context_url}/@@castle.cms.meta/meta-right"></div>
+        </div>
+      </div>
+      <div data-tile="${context_url}/@@plone.app.standardtiles.discussion"></div>
+
+    </div>
+
+      <!-- Global Footer -->
+      <div class="global-footer">
+        <div id="footer-container">
+          <div data-tile="${context_url}/@@castle.cms.meta/meta-footer"></div>
+        </div>
+      </div> <!-- End of Global Footer -->
+    </div>
+    <!-- // end .wrap -->
+
+    <div data-tile="${context_url}/@@plone.app.standardtiles.analytics" />
+
+    <script src="js/vendor/jquery.min.js" tal:replace="nothing"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/animations.js"></script>
+  </body>
+  </html>

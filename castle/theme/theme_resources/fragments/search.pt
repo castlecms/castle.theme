@@ -1,0 +1,11 @@
+<form class="navbar-form navbar-right" action="${portal_url}/@@search">
+  <div class="form-group">
+    <label for="theme-search" class="sr-only">Search</label>
+    <div id="theme-search" class="input-group input-group-sm">
+      <input type="search" class="form-control" id="search-input" name="SearchableText">
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="submit"><span class="icon icon-search"></span></button>
+      </span>
+    </div>
+  </div>
+</form>

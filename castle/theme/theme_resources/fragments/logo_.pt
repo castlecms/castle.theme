@@ -1,0 +1,7 @@
+<tal:defs tal:define="portal_state context/@@plone_portal_state;
+                      title python: utils.get_registry_value('plone.site_title', 'Castle CMS');
+                      root_title portal_state/navigation_root_title;
+                      root_title python: root_title in ('', None, 'site') and title or root_title;">
+<a class="navbar-brand" href="${site_url}"
+   title="${root_title}"><img src="${utils/get_logo}" alt="${title}"/></a>
+</tal:defs>

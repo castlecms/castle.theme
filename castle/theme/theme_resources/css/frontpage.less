@@ -1,0 +1,196 @@
+/* Styles for front page */
+
+// CONTAINERS
+// ------------------------------------------------
+
+.wrap{
+
+  #main-content-container{
+    max-width:100%;
+    margin:50px auto;
+  }
+
+	.mosaic-row-narrow{
+	  max-width:1200px;
+	  margin:0 auto;
+	}
+
+	.mosaic-blue-background{
+    background: rgba(35,148,209,1);
+    background: -moz-linear-gradient(top, rgba(35,148,209,1) 0%, rgba(31,80,132,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(35,148,209,1)), color-stop(100%, rgba(31,80,132,1)));
+    background: -webkit-linear-gradient(top, rgba(35,148,209,1) 0%, rgba(31,80,132,1) 100%);
+    background: -o-linear-gradient(top, rgba(35,148,209,1) 0%, rgba(31,80,132,1) 100%);
+    background: -ms-linear-gradient(top, rgba(35,148,209,1) 0%, rgba(31,80,132,1) 100%);
+    background: linear-gradient(to bottom, rgba(35,148,209,1) 0%, rgba(31,80,132,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2394d1', endColorstr='#1f5084', GradientType=0 );
+
+    padding:25px 0;
+    margin:50px 0;
+
+    a:not(.btn){
+      color:#fff;
+      text-decoration: underline;
+
+      &:hover, &:focus{
+        text-decoration: none;
+      }
+    }
+
+    h2,h3,h4,h5,h6,p{
+      color:#fff;
+    }
+
+    h4{
+      line-height: 36px;
+      margin-bottom:15px;
+    }
+
+    .btn-ghost{
+      margin:20px 0 30px;
+    }
+	}
+
+  .faq-item{
+      margin-bottom:50px;
+
+    h4{
+      color:#1f5084;
+      font-family:'Open Sans', "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+  }
+}
+
+
+// HEADER
+// --------------------------------------------------
+
+#cover-img{
+  border:none;
+  position: relative;
+  width:100%;
+  min-height: 600px;
+  background: #1f4e82;
+  background: url(../img/castle-cover2.jpg) no-repeat center center;
+  background-size: cover;
+
+  h1{
+    font-size:50px;
+  }
+
+  .action-buttons{
+    margin-top:50px;
+
+    .btn-primary{
+      text-transform:uppercase;
+      margin-right:15px;
+    }
+
+    .icon.icon-arrow-down{
+      width:1.2em;
+      height:1.2em;
+    }
+  }
+
+  .presented-by{
+    text-align:center;
+    font-size:1.2em;
+    margin-top:-5px;
+  }
+
+  .inner-content{
+    color: #fff;
+    width: 60%;
+    margin:0 auto;
+    text-align: center;
+    position:relative;
+    top:230px;
+  }
+}
+
+//search
+.navbar-form{
+  .form-group{
+    border:2px solid #fff;
+  }
+
+  .form-control{
+    height:35px;
+  }
+
+  input[type="search"]{
+    background:none;
+    border:none;
+    color:#fff;
+  }
+
+  .input-group-sm > .input-group-btn > .btn{
+    border:none;
+    border-left:2px solid #fff;
+    background:none;
+    transition:background 0.4s;
+
+    &:hover, &:focus{
+      background:#fff;
+      border:none;
+      border-left:2px solid #fff;
+      box-shadow:none;
+
+      .icon-search::before{
+        content: url("../icons/icon-searchbar-hover.svg");
+      }
+    }
+  }
+
+  .icon.icon-search {
+    &::before{
+      content: url("../icons/icon-searchbar.svg");
+      vertical-align: -0.2em;
+    }
+  }
+}
+
+// NAVIGATION
+// --------------------------------------------------
+
+.nav, .navbar-default .navbar-nav{
+  color:#fff;
+
+  >li > a{
+    color:#fff;
+
+    &:hover, &:focus{
+      border-bottom:1px solid #fff;
+      color:#fff;
+    }
+  }
+}
+
+// CONTENT STYLES
+// --------------------------------------------------
+
+#demo img{
+  margin:25px 0;
+}
+
+// MEDIA QUERIES
+// --------------------------------------------------
+
+@media only screen and (max-width:768px){
+  .navbar-default .navbar-toggle{
+    border-color:#fff;
+
+    .icon-bar{
+      background-color:#fff;
+    }
+  }
+
+  .navbar-form{
+    margin:20px -15px;
+
+    .input-group-sm > .input-group-btn > .btn{
+      background-color:#333;
+      border:1px solid #333;
+    }
+  }
+}
