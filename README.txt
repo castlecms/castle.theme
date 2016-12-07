@@ -1,18 +1,7 @@
 Introduction
 ============
 
+This is the default theme for Castle CMS.
 
-
-This product may contain traces of nuts.
-
-
-Installing:
-
-
-     npm install
-     npm install grunt-cli
-
-
-Building::
-
-    ./node_modules/.bin/grunt less
+Since Castle does use diazo, this theme should be a good reference on how to
+write your own Castle themes.
