@@ -2,19 +2,18 @@
 <html class="no-js" lang="en" data-gridsystem="bs3">
 <head>
   <meta charset="utf-8"/>
-  <link data-tile="${context_url}/@@castle.cms.metadata"/>
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <link data-tile="${portal_url}/@@plone.app.standardtiles.stylesheets"/>
-
+  <link data-tile="${context_url}/@@castle.cms.metadata"/>
+  <link data-include-css />
+  <link data-include-js />
+  
   <link href='https://fonts.googleapis.com/css?family=Raleway:400,500,600,700' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,600italic,700,700italic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/plone.css?v=2" />
   <link rel="stylesheet" href="css/theme.css?v=2" />
   <link rel="stylesheet" href="css/frontpage.css?v=2" />
 
-  <link data-include-js />
+
 </head>
 <body class="frontpage-layout">
   <div data-tile="${context_url}/@@plone.app.standardtiles.toolbar" />
@@ -97,7 +96,6 @@
     <div data-tile="${context_url}/@@plone.app.standardtiles.analytics" />
 
     <script src="js/vendor/jquery.min.js" tal:replace="nothing"></script>
-    <script src="js/bootstrap.min.js"></script>
     <script src="js/animations.js"></script>
 
   </body>
