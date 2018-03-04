@@ -1,7 +1,7 @@
 Introduction
 ============
 
-This is the default theme for Castle CMS.
+This is the default theme for CastleCMS.
 
-Since Castle does use diazo, this theme should be a good reference on how to
-write your own Castle themes.
+Since CastleCMS does not use Diazo, this theme should be a good reference on how to
+write your own CastleCMS themes.
