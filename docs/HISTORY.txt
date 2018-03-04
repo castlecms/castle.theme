@@ -1,10 +1,11 @@
 Changelog
 =========
 
-1.0.2 (unreleased)
-------------------
+1.0.2dev0 (unreleased)
+----------------------
 
-- Nothing changed yet.
+- fix MANIFEST.in, remove extraneous version.txt
+  [tkimnguyen]
 
 
 1.0.1 (2018-03-03)
