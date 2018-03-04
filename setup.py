@@ -1,24 +1,26 @@
 from setuptools import setup, find_packages
 import os
 
-version = '1.0.0'
+version = '1.0.1'
 
 setup(name='castle.theme',
       version=version,
-      description="Castle Theme Package",
+      description="CastleCMS Theme Package",
       long_description=open("README.txt").read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
       # Get more strings from
       # http://pypi.python.org/pypi?%3Aaction=list_classifiers
       classifiers=[
         "Framework :: Plone",
+        "Framework :: Plone :: 5.0",
+        "Framework :: Plone :: 5.1",
         "Programming Language :: Python",
         "Topic :: Software Development :: Libraries :: Python Modules",
         ],
       keywords='',
-      author='',
-      author_email='',
-      url='http://svn.plone.org/svn/collective/',
+      author='Wildcard Corp.',
+      author_email='info@wildcardcorp.com',
+      url='https://github.com/castlecms/castle.theme',
       license='GPL',
       packages=find_packages(exclude=['ez_setup']),
       namespace_packages=['castle'],

@@ -1,10 +1,10 @@
 Changelog
 =========
 
-1.0.1 (unreleased)
+1.0.1 (2018-03-03)
 ------------------
 
-- fix spelling of CastleCMS
+- fix spelling of CastleCMS, update package metadata in setup.py, bump version
   [tkimnguyen]
 
 
