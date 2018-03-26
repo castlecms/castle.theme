@@ -2,7 +2,6 @@
 
 // CONTAINERS
 // ------------------------------------------------
-
 .wrap{
 
   #main-content-container{
@@ -171,6 +170,24 @@
 
 #demo img{
   margin:25px 0;
+}
+
+// The following is needed for if site announcement is active
+#site-announcement + nav.navbar-default {
+  position: relative;
+  z-index: 5;
+  float: left;
+  width: 100%;
+  .container-fluid {
+    width: 100%;
+    position: relative;
+  }
+  + .castle-container .row #cover-img {
+    min-height: 700px;
+  }
+  + .castle-container {
+    padding: 0px;
+  }
 }
 
 // MEDIA QUERIES
