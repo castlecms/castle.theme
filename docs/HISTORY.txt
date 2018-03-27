@@ -7,6 +7,9 @@ Changelog
 - fix MANIFEST.in, remove extraneous version.txt
   [tkimnguyen]
 
+- fixed the announcement widget colliding with the cover image fragment
+  [robzonenet]
+
 
 1.0.1 (2018-03-03)
 ------------------
