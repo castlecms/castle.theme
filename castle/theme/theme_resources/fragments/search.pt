@@ -5,7 +5,7 @@
       <label for="search-input" class="sr-only">Search</label>
       <input type="search" class="form-control" id="search-input" name="SearchableText" placeholder="Search">
       <span class="input-group-btn">
-        <button class="btn btn-default" type="submit"><span class="icon icon-search"><span class="sr-only">Submit Button</span></span></button>
+        <button class="btn btn-default" type="submit"><span class="icon icon-search"></span><span class="sr-only">Submit Button</span></button>
       </span>
     </div>
   </div>
