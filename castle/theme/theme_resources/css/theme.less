@@ -416,6 +416,8 @@ textarea {
 input[type="checkbox"],
 input[type="radio"] {
   padding: 0;
+  margin-bottom: .1em;
+  margin-top: -.2em;
 }
 
 input[type="text"],
@@ -458,6 +460,17 @@ input[type="text"], input[type="email"], input[type="password"], textarea, selec
 input[type="search"]{
   border-radius:0;
   height:35px;
+}
+
+input[type="radio"] + label, input[type="checkbox"] + label{
+    display:inline;
+}
+
+.field.field{
+    margin-bottom:2em;
+}
+.field .formHelp{
+    display:block;
 }
 
 .input-group-sm .form-control, .input-group-sm > .input-group-btn > .btn{
