@@ -415,11 +415,8 @@ textarea {
 
 input[type="checkbox"],
 input[type="radio"] {
-background: red;
-  padding: 10px;
-
-  margin-bottom: .1em;
-  margin-top: -.2em;
+  vertical-align: middle;
+  margin: 0;
 }
 
 input[type="text"],
@@ -463,9 +460,14 @@ input[type="search"]{
   border-radius:0;
   height:35px;
 }
-
+.template-site-controlpanel .label {
+  padding-left: 0px
+}
 input[type="radio"] + label, input[type="checkbox"] + label{
     display:inline;
+    .label {
+      white-space: normal;
+    }
 }
 
 .field.field{
