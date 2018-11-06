@@ -1,5 +1,6 @@
-from castle.cms.widgets import ImageRelatedItemsFieldWidget
-from castle.cms.widgets import VideoRelatedItemsFieldWidget
+from castle.cms.tiles.video import VideoTile
+from castle.cms.widgets import (ImageRelatedItemsFieldWidget,
+                                VideoRelatedItemsFieldWidget)
 from plone.app.textfield import RichText
 from plone.app.z3cform.widget import RichTextFieldWidget
 from plone.autoform import directives as form
@@ -9,14 +10,11 @@ from zope import schema
 from zope.component import getMultiAdapter
 from zope.component.hooks import getSite
 from zope.globalrequest import getRequest
-from zope.interface import implements
-from zope.interface import Invalid
-from zope.interface import invariant
-from castle.cms.tiles.video import VideoTile
+from zope.interface import Invalid, implementer, invariant
 
 
+@implementer(IPersistentTile)
 class FeatureTile(VideoTile):
-    implements(IPersistentTile)
 
     def getTitle(self):
         icon_obj = self.get_icon()
@@ -43,6 +41,7 @@ class FeatureTile(VideoTile):
         if not icon:
             return
         return self.utils.get_object(self.data['icon'][0])
+
 
 class IFeatureTileSchema(model.Schema):
     title = schema.TextLine(
