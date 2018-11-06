@@ -4,6 +4,9 @@ Changelog
 1.0.5 (unreleased)
 ------------------
 
+- Python 3 compat
+  [vangheem]
+
 - Fix accessibility issue for search/label box
   [robzonenet]
 
@@ -25,9 +28,6 @@ Changelog
   [vangheem]
 
 - Reorganize into smaller components
-  [vangheem]
-
-- Python 3 compat
   [vangheem]
 
 - fix spelling of CastleCMS
