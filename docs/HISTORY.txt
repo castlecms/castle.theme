@@ -4,6 +4,9 @@ Changelog
 1.0.3 (unreleased)
 ------------------
 
+- Python 3 compat
+  [vangheem]
+
 - fix spelling of CastleCMS
   [tkimnguyen]
 
