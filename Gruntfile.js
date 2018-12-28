@@ -11,7 +11,8 @@ module.exports = function (grunt) {
             dist: {
                 options: {
                     plugins: [
-                        new require('less-plugin-inline-urls')
+                        new require('less-plugin-inline-urls'),
+                        new require('less-plugin-inline-svg')
                     ],
                     paths: [],
                     strictMath: false,

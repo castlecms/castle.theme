@@ -10,6 +10,8 @@
     "grunt-contrib-requirejs": "~0.4.3",
     "grunt-contrib-watch": "latest",
     "grunt-sed": "~0.1.1",
-    "less-plugin-inline-urls": "^1.1.0"
+    "less-plugin-inline-urls": "1.1.0",
+    "less-plugin-inline-svg": "1.0.0",
+    "less": "2.5.1"
   }
 }
