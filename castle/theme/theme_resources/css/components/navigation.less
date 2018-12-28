@@ -1,0 +1,130 @@
+// NAVIGATION
+// --------------------------------------------------
+.navbar > .container-fluid .navbar-brand{
+  margin-left:0;
+}
+
+.navbar.navbar-default{
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  margin:0 auto;
+  padding-top: 20px;
+  border-radius:0;
+  z-index:1;
+
+  .container-fluid{
+    padding:10px 15px;
+    max-width:1200px;
+  }
+}
+
+/* toolbar location fix */
+body.toolbar-initialized {
+  > .wrap {
+    margin-left: 190px;
+    margin-top: 55px;
+    width: auto;
+  }
+  &.no-roles {
+    > .wrap {
+      margin-left: 0;
+    }
+  }
+  .navbar-default{
+    top: 0;
+  }
+}
+
+
+.nonfrontpage-layout .navbar.navbar-default{
+  position:relative;
+  padding-top:15px;
+}
+
+.navbar-brand{
+  height:auto;
+  padding:0;
+  margin-top:-10px;
+
+  img{
+    height:70px;
+    width:auto;
+    margin-right:20px;
+  }
+}
+
+.nav#portal-globalnav{
+  float:left;
+  margin-left:0px;
+}
+
+.nav, .navbar-default .navbar-nav{
+  margin-top:0;
+  height:@navbar-height;
+  color:#000;
+
+  > li{
+    display:inline-block;
+
+    > a{
+      color:#000;
+      height:100%;
+      padding: 0;
+      margin:0 15px;
+      font-size: 1.125em;
+      font-weight: 400;
+      text-transform: uppercase;
+      line-height: 2.75em;
+      letter-spacing: 0.04em;
+      transition:all 0.5s;
+
+      &:hover, &:focus{
+        background:transparent;
+        border-bottom:1px solid #000;
+        color:#000;
+      }
+    }
+  }
+}
+
+//search
+.navbar-form{
+  margin-top:10px;
+
+  input[type="search"]{
+    border:1px solid #dedede;
+  }
+
+  .input-group-sm > .input-group-btn > .btn{
+    border:1px solid #dedede;
+    padding:5px;
+
+    &:hover, &:focus{
+      background:#2392d0;
+      border:1px solid #fff;
+      box-shadow: none;
+
+      .icon-search::before{
+        content: url("../icons/icon-searchbar.svg");
+      }
+    }
+  }
+
+  .icon.icon-search {
+    color: #fff;
+    background: none;
+    z-index: 90;
+    font-size: 16px;
+    margin-left:0.2em;
+
+    &::before{
+      content: url("../icons/icon-searchbar-hover.svg");
+    }
+  }
+}
+
+#theme-search{
+    margin-bottom:0;
+}

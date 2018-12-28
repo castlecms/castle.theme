@@ -11,7 +11,8 @@ module.exports = function (grunt) {
             dist: {
                 options: {
                     plugins: [
-                        new require('less-plugin-inline-urls')
+                        new require('less-plugin-inline-urls'),
+                        new require('less-plugin-inline-svg')
                     ],
                     paths: [],
                     strictMath: false,
@@ -35,7 +36,8 @@ module.exports = function (grunt) {
         watch: {
             scripts: {
                 files: [
-                    'castle/theme/theme_resources/css/*.less'
+                    'castle/theme/theme_resources/css/*.less',
+                    'castle/theme/theme_resources/css/components/*.less'
                 ],
                 tasks: ['less']
             }

@@ -1,0 +1,67 @@
+
+
+// ICONS
+// --------------------------------------------------
+
+.share-buttons-tile [class*="webicon"], .icon{
+  width: 1.5em;
+  height: 1.5em;
+  display: inline-block;
+  text-align: center;
+  margin: 0 0.1em 0 0.7em;
+  vertical-align: -0.3em;
+}
+
+.icon-bar::before{
+  content:"";
+}
+
+.icon-arrow-down::before{
+  content: url("../icons/icon-arrow-down.svg");
+}
+
+.icon-arrow-top::before{
+  content: url("../icons/icon-arrow-top.svg");
+}
+
+a:hover .icon-arrow-top::before, .icon-arrow-top:hover::before, .active .icon-arrow-top::before {
+  content: url("../icons/icon-arrow-top-hover.svg");
+}
+
+.webicon.twitter{
+  content: url("../icons/icon-twitter.svg");
+}
+
+.webicon.facebook{
+  content: url("../icons/icon-facebook.svg");
+}
+
+.webicon.mail{
+  content: url("../icons/icon-email.svg");
+}
+
+.webicon.print{
+  content: url("../icons/icon-print.svg");
+}
+
+.webicon.share{
+  content: url("../icons/icon-share.svg");
+}
+
+/*footer icons*/
+
+.icon-phone::before{
+  content:url("../icons/icon-footer-phone.svg");
+}
+.icon-email::before{
+  content:url("../icons/icon-footer-email.svg");
+}
+.icon-footer-fb::before{
+  content:url("../icons/icon-footer-fb.svg");
+}
+.icon-footer-twitter::before{
+  content:url("../icons/icon-footer-twitter.svg");
+}
+.icon-footer-linkedin::before{
+  content:url("../icons/icon-footer-linkedin.svg");
+}

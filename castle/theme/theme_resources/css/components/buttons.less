@@ -1,0 +1,42 @@
+
+// BUTTONS
+// --------------------------------------------------
+
+.btn{
+  font-family:@font-family-base;
+  font-weight:500;
+  color:#fff;
+  padding: 8px 14px;
+  font-size: 18px;
+  letter-spacing: 0.025em;
+  border-radius: 0;
+  transition: background-color 0.3s;
+}
+
+.btn-primary{
+  background-color: #6fab52;
+  border:none;
+
+  &:hover, &:focus{
+    background-color:darken(#6fab52,5%);
+  }
+}
+
+.btn-ghost{
+  background-color:transparent;
+  border:2px solid #fff;
+
+  &:hover, &:focus{
+    color:#141414;
+    background-color:#fff;
+  }
+}
+
+.btn-link{
+  color:#fff;
+
+  &:hover, &:focus{
+    color:#fff;
+    text-decoration:underline;
+  }
+}

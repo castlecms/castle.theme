@@ -1,0 +1,81 @@
+
+// FORM ELEMENTS
+// --------------------------------------------------
+
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  vertical-align: middle;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  vertical-align: middle;
+  margin: 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea {
+  color: #666;
+  padding: 3px 6px;
+  box-shadow: none;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+textarea:focus {
+  color: #333;
+  outline:1px solid @brand-primary;
+}
+
+textarea {
+  overflow: auto; /* Removes default vertical scrollbar in IE6/7/8/9 */
+  padding: 6px;
+  vertical-align: top; /* Improves readability and alignment in all browsers */
+  width: 100%;
+}
+
+label > .label{
+  font-size:inherit;
+}
+
+input[type="text"], input[type="email"], input[type="password"], textarea, select{
+  border-radius:0;
+  min-height: 41px;
+}
+input[type="search"]{
+  border-radius:0;
+  height:35px;
+}
+.template-site-controlpanel .label {
+  padding-left: 0px
+}
+input[type="radio"] + label, input[type="checkbox"] + label{
+    display:inline;
+    .label {
+      white-space: normal;
+    }
+}
+
+.field.field{
+    margin-bottom:2em;
+}
+.field .formHelp{
+    display:block;
+}
+
+.input-group-sm .form-control, .input-group-sm > .input-group-btn > .btn{
+  border-radius:0;
+}

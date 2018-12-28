@@ -1,0 +1,72 @@
+
+// FOOTER
+// --------------------------------------------------
+
+.global-footer{
+  font-family:@font-family-base;
+  background:@brand-primary;
+
+  a{
+    color:#fff;
+    text-decoration:none;
+    opacity:1;
+    transition: opacity 0.3s;
+
+    &:hover, &:active{
+      opacity:0.75;
+    }
+  }
+
+  h2,h3,h4,h5,h6{
+    color:#fff;
+    font-family:@font-family-base;
+    margin-bottom:25px;
+  }
+
+  p, ul{
+    color:#fff;
+    font-family:@font-family-base;
+  }
+
+  ul{
+    list-style:none;
+    padding:0;
+
+    li{
+      margin-bottom:15px;
+    }
+
+    &.footer-contact{
+      > li .icon{
+          margin:0 10px 0 0;
+      }
+    }
+
+    &.social-icons{
+      li{
+        display:inline-block;
+      }
+    }
+  }
+
+  .btn-ghost{
+    position:absolute;
+    right:50px;
+    bottom:75px;
+    padding:4px;
+
+    .icon{
+      margin:0;
+    }
+  }
+
+  .form-group, .input-group{
+    width:100%;
+  }
+}
+
+#footer-container{
+  max-width:1200px;
+  margin:50px auto 0;
+  padding:20px 0;
+}

@@ -4,6 +4,15 @@ Changelog
 1.0.3 (unreleased)
 ------------------
 
+- Fix query listing styles
+  [vangheem]
+
+- Fix build
+  [vangheem]
+
+- Reorganize into smaller components
+  [vangheem]
+
 - Python 3 compat
   [vangheem]
 
