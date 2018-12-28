@@ -1,24 +1,29 @@
 @import "custom-variables.less";
-@import url("https://raw.githubusercontent.com/plone/Products.CMFPlone/master/Products/CMFPlone/static/patterns/toolbar/src/css/variables.less");
-@import (reference) url("https://raw.githubusercontent.com/plone/plonetheme.barceloneta/master/plonetheme/barceloneta/theme/less/variables.plone.less");
-@import (reference) url("https://raw.githubusercontent.com/plone/plonetheme.barceloneta/master/plonetheme/barceloneta/theme/less/grid.plone.less");
+@plone-version: "5.0.8";
+@barceloneta-version: "1.6.23";
+@plone-base: "https://raw.githubusercontent.com/plone/Products.CMFPlone/@{plone-version}/Products/CMFPlone/static";
+@barceloneta-base: "https://raw.githubusercontent.com/plone/plonetheme.barceloneta/@{barceloneta-version}/plonetheme/barceloneta/theme/less";
 
-@import url("https://raw.githubusercontent.com/plone/plonetheme.barceloneta/master/plonetheme/barceloneta/theme/less/mixin.clearfix.plone.less");
-@import url("https://raw.githubusercontent.com/plone/plonetheme.barceloneta/master/plonetheme/barceloneta/theme/less/mixin.gridframework.plone.less");
-@import url("https://raw.githubusercontent.com/plone/plonetheme.barceloneta/master/plonetheme/barceloneta/theme/less/mixin.grid.plone.less");
-@import url("https://raw.githubusercontent.com/plone/plonetheme.barceloneta/master/plonetheme/barceloneta/theme/less/mixin.prefixes.plone.less");
-@import url("https://raw.githubusercontent.com/plone/plonetheme.barceloneta/master/plonetheme/barceloneta/theme/less/mixin.tabfocus.plone.less");
-@import url("https://raw.githubusercontent.com/plone/plonetheme.barceloneta/master/plonetheme/barceloneta/theme/less/mixin.forms.plone.less");
-@import url("https://raw.githubusercontent.com/plone/plonetheme.barceloneta/master/plonetheme/barceloneta/theme/less/mixin.buttons.plone.less");
-@import url("https://raw.githubusercontent.com/plone/plonetheme.barceloneta/master/plonetheme/barceloneta/theme/less/mixin.borderradius.plone.less");
+@import url("@{plone-base}/patterns/toolbar/src/css/variables.less");
+@import (reference) url("@{barceloneta-base}/variables.plone.less");
+@import (reference) url("@{barceloneta-base}/grid.plone.less");
 
-@import url("https://raw.githubusercontent.com/plone/plonetheme.barceloneta/master/plonetheme/barceloneta/theme/less/modal.plone.less");
-@import url("https://raw.githubusercontent.com/plone/plonetheme.barceloneta/master/plonetheme/barceloneta/theme/less/forms.plone.less");
-@import url("https://raw.githubusercontent.com/plone/plonetheme.barceloneta/master/plonetheme/barceloneta/theme/less/formtabbing.plone.less");
-@import url("https://raw.githubusercontent.com/plone/plonetheme.barceloneta/master/plonetheme/barceloneta/theme/less/buttons.plone.less");
-@import url("https://raw.githubusercontent.com/plone/plonetheme.barceloneta/master/plonetheme/barceloneta/theme/less/alerts.plone.less");
-@import url("https://raw.githubusercontent.com/plone/plonetheme.barceloneta/master/plonetheme/barceloneta/theme/less/search.plone.less");
-@import url("https://raw.githubusercontent.com/plone/plonetheme.barceloneta/master/plonetheme/barceloneta/theme/less/portlets.plone.less");
+@import url("@{barceloneta-base}/mixin.clearfix.plone.less");
+@import url("@{barceloneta-base}/mixin.gridframework.plone.less");
+@import url("@{barceloneta-base}/mixin.grid.plone.less");
+@import url("@{barceloneta-base}/mixin.prefixes.plone.less");
+@import url("@{barceloneta-base}/mixin.tabfocus.plone.less");
+@import url("@{barceloneta-base}/mixin.forms.plone.less");
+@import url("@{barceloneta-base}/mixin.buttons.plone.less");
+@import url("@{barceloneta-base}/mixin.borderradius.plone.less");
+
+@import url("@{barceloneta-base}/modal.plone.less");
+@import url("@{barceloneta-base}/forms.plone.less");
+@import url("@{barceloneta-base}/formtabbing.plone.less");
+@import url("@{barceloneta-base}/buttons.plone.less");
+@import url("@{barceloneta-base}/alerts.plone.less");
+@import url("@{barceloneta-base}/search.plone.less");
+@import url("@{barceloneta-base}/portlets.plone.less");
 
 .mosaic-toolbar {
   z-index: 10000 !important;

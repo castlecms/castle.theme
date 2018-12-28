@@ -35,7 +35,8 @@ module.exports = function (grunt) {
         watch: {
             scripts: {
                 files: [
-                    'castle/theme/theme_resources/css/*.less'
+                    'castle/theme/theme_resources/css/*.less',
+                    'castle/theme/theme_resources/css/components/*.less'
                 ],
                 tasks: ['less']
             }
