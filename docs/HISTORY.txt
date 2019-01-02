@@ -4,7 +4,8 @@ Changelog
 1.0.4 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Fix rendering announcement on fourohfour
+  [vangheem]
 
 
 1.0.3 (2018-12-28)
