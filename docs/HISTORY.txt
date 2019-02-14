@@ -4,7 +4,8 @@ Changelog
 1.0.5 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Fix accessibility issue for search/label box
+  [robzonenet]
 
 
 1.0.4 (2019-01-02)
