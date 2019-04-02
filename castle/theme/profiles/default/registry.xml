@@ -35,6 +35,7 @@
     <value purge="False">
       <element>row-narrow</element>
       <element>blue-background</element>
+      <element>grid-row-fullwidth</element>
     </value>
   </record>
 
@@ -57,5 +58,14 @@
     <value key="rich_text">false</value>
     <value key="weight">120</value>
   </records>
-
+  <records interface="plone.app.mosaic.interfaces.IFormat"
+           prefix="plone.app.mosaic.formats.grid_row_fullwidth">
+    <value key="name">grid-row-fullwidth</value>
+    <value key="category">row</value>
+    <value key="label">Full width</value>
+    <value key="action">row-toggle-class</value>
+    <value key="icon">true</value>
+    <value key="favorite">false</value>
+    <value key="weight">100</value>
+  </records>
 </registry>

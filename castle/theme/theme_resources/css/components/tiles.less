@@ -19,3 +19,28 @@
 .queryfilter-container button.clear {
   margin-top: -5px;
 }
+
+.mosaic-grid-row-fullwidth {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  width: 100vw;
+  position: relative;
+  margin-left: -50vw;
+  left: 50%;
+  overflow-x: hidden;
+  .mosaic-width-full {
+    padding: 0px !important;
+  }
+}
+// fix for editing buttons for scrollable images
+.template-edit .mosaic-grid-row-fullwidth {
+    overflow: visible;
+    margin-left: 0;
+    left: -3%;
+    width: 98vw;
+}
+.toolbar-initialized .mosaic-grid-row-fullwidth {
+  margin-left: -15px;
+  left: inherit;
+  padding-left: 15px;
+}

@@ -7,6 +7,9 @@ Changelog
 - Fix accessibility issue for search/label box
   [robzonenet]
 
+- Add in a full width format option in the editing interface 
+  [robzonenet]
+
 
 1.0.4 (2019-01-02)
 ------------------
