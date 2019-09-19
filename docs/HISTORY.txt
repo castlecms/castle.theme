@@ -7,6 +7,8 @@ Changelog
 - Fix accessibility issue for search/label box
   [robzonenet]
 
+- Add sticky footer slot to html templates
+  [lucid-0]
 
 1.0.4 (2019-01-02)
 ------------------
