@@ -1,0 +1,6 @@
+make: Entering directory `/Users/danassarohmeyer/dev/git/castle-dev/res/default/castle.cms/src/municiple.theme'
+npm install
+./bin/pip install lxml
+./bin/pip install cssselect
+make: Leaving directory `/Users/danassarohmeyer/dev/git/castle-dev/res/default/castle.cms/src/municiple.theme'
+ 

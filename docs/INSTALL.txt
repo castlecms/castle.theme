@@ -1,16 +1,16 @@
-castle.theme Installation
+municipal Installation
 -------------------------
 
-To install castle.theme using zc.buildout and the plone.recipe.zope2instance
+To install municipal using zc.buildout and the plone.recipe.zope2instance
 recipe to manage your project, you can do this:
 
-* Add ``castle.theme`` to the list of eggs to install, e.g.:
+* Add ``municipal`` to the list of eggs to install, e.g.:
 
     [buildout]
     ...
     eggs =
         ...
-        castle.theme
+        municipal
        
 * Re-run buildout, e.g. with:
 

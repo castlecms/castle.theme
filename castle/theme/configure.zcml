@@ -20,7 +20,7 @@
   <plone:static
     directory="theme_resources"
     type="theme"
-    name="castle.theme"
+    name="municipal"
     />
 
 </configure>

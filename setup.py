@@ -3,7 +3,7 @@ import os
 
 version = '1.0.7.dev0'
 
-setup(name='castle.theme',
+setup(name='municipal',
       version=version,
       description="CastleCMS Theme Package",
       long_description=open("README.txt").read() + "\n" +
@@ -20,7 +20,7 @@ setup(name='castle.theme',
       keywords='',
       author='Wildcard Corp.',
       author_email='info@wildcardcorp.com',
-      url='https://github.com/castlecms/castle.theme',
+      url='https://github.com/castlecms/municipal',
       license='GPL',
       packages=find_packages(exclude=['ez_setup']),
       namespace_packages=['castle'],

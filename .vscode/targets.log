@@ -1,0 +1,299 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 3.81
+# Copyright (C) 2006  Free Software Foundation, Inc.
+# This is free software; see the source for copying conditions.
+# There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+# This program built for i386-apple-darwin11.3.0
+ 
+make: *** No rule to make target `all'.  Stop.
+
+
+# Make data base, printed on Tue Jul 12 14:10:16 2022
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# environment
+VSCODE_LOG_NATIVE = false
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# automatic
+ 
+@D = $(patsubst %/,%,$(dir $@))
+# automatic
+@F = $(notdir $@)
+# environment
+PERIOD = 30
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# makefile
+CURDIR := /Users/danassarohmeyer/dev/git/castle-dev/res/default/castle.cms/src/municiple.theme
+# makefile
+SHELL = /bin/sh
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# environment
+_ZPLUG_CONFIG_SUBSHELL = :
+# environment
+_ = /usr/bin/make
+# makefile (from `Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+ZPLUG_THREADS = 16
+# environment
+ZPLUG_FILTER = fzf-tmux:fzf:peco:percol:fzy:zaw
+# environment
+__CFBundleIdentifier = com.microsoft.VSCode
+# environment
+_ZPLUG_VERSION = 2.4.2
+# environment
+VSCODE_IPC_HOOK_EXTHOST = /var/folders/7z/4ry5pyln5tddk4408z7g40tm0000gp/T/vscode-ipc-7f6719bc-e3c2-4188-a39b-3d1af93d906d.sock
+# environment
+VSCODE_CWD = /
+# environment
+PATH = /usr/local/lib/ruby/gems/3.1.0/bin:/usr/local/opt/ruby/bin:/Users/danassarohmeyer/.pyenv/shims:/Users/danassarohmeyer/.pyenv/bin:/usr/local/Cellar/zplug/2.4.2/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+# environment
+LSCOLORS = gxexfxChcxAhBhabAfAgBx
+# environment
+FPATH = /usr/local/Cellar/zplug/2.4.2/autoload:/usr/local/Cellar/zplug/2.4.2/misc/completions:/usr/local/Cellar/zplug/2.4.2/base/sources:/usr/local/Cellar/zplug/2.4.2/base/utils:/usr/local/Cellar/zplug/2.4.2/base/job:/usr/local/Cellar/zplug/2.4.2/base/log:/usr/local/Cellar/zplug/2.4.2/base/io:/usr/local/Cellar/zplug/2.4.2/base/core:/usr/local/Cellar/zplug/2.4.2/base/base:/usr/local/Cellar/zplug/2.4.2/autoload/commands:/usr/local/Cellar/zplug/2.4.2/autoload/options:/usr/local/Cellar/zplug/2.4.2/autoload/tags:/usr/local/share/zsh/site-functions:/usr/share/zsh/site-functions:/usr/share/zsh/5.8.1/functions
+# environment
+ZPLUG_HOME = /usr/local/opt/zplug
+# environment
+ZPLUG_CACHE_DIR = /usr/local/opt/zplug/cache
+# environment
+VSCODE_LOG_STACK = false
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+PYENV_ROOT = /Users/danassarohmeyer/.pyenv
+# default
+.FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
+# environment
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.Ly2cClgejT/Listeners
+# automatic
+%F = $(notdir $%)
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+ZPLUG_PROTOCOL = HTTPS
+# environment
+PWD = /Users/danassarohmeyer/dev/git/castle-dev/res/default/castle.cms/src/municiple.theme
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+_ZPLUG_URL = https://github.com/zplug/zplug
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /Users/danassarohmeyer
+# default
+MAKEFILEPATH = $(shell /usr/bin/xcode-select -print-path 2>/dev/null || echo /Developer)/Makefiles
+# environment
+VSCODE_CODE_CACHE_PATH = /Users/danassarohmeyer/Library/Application Support/Code/CachedData/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5
+# environment
+LOGNAME = danassarohmeyer
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# environment
+NVM_CD_FLAGS = -q
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# environment
+ZPLUG_BIN = /usr/local/opt/zplug/bin
+# environment
+_ZPLUG_PREZTO = sorin-ionescu/prezto
+# environment
+XPC_FLAGS = 0x0
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+SHLVL = 1
+# default
+MAKE_VERSION := 3.81
+# environment
+USER = danassarohmeyer
+# makefile
+.DEFAULT_GOAL := install
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# default
+MAKE_COMMAND := /Library/Developer/CommandLineTools/usr/bin/make
+# default
+.VARIABLES := 
+# environment
+ 
+TMPDIR = /var/folders/7z/4ry5pyln5tddk4408z7g40tm0000gp/T/
+# automatic
+*F = $(notdir $*)
+# environment
+VSCODE_IPC_HOOK = /Users/danassarohmeyer/Library/Application Support/Code/1.67.2-main.sock
+# environment
+_ZPLUG_AWKPATH = /usr/local/Cellar/zplug/2.4.2/misc/contrib
+# makefile
+MAKEFLAGS = Rrqp
+# environment
+MFLAGS = -Rrqp
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+NVM_DIR = /Users/danassarohmeyer/.nvm
+# environment
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.924408.924414
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# automatic
++F = $(notdir $+)
+# environment
+ZPLUG_USE_CACHE = true
+# environment
+ZPLUG_ROOT = /usr/local/Cellar/zplug/2.4.2
+# environment
+ZPLUG_REPOS = /usr/local/opt/zplug/repos
+# environment
+__CF_USER_TEXT_ENCODING = 0x1F6:0x0:0x0
+# environment
+COMMAND_MODE = unix2003
+# default
+MAKEFILES := 
+# automatic
+<F = $(notdir $<)
+# environment
+LC_ALL = C
+# environment
+_ZPLUG_OHMYZSH = robbyrussell/oh-my-zsh
+# automatic
+^F = $(notdir $^)
+# environment
+ZPLUG_ERROR_LOG = /usr/local/opt/zplug/.error_log
+# default
+SUFFIXES := 
+# default
+.INCLUDE_DIRS = /usr/local/include
+# environment
+MAKELEVEL := 0
+# environment
+ZPLUG_LOADFILE = /usr/local/opt/zplug/packages.zsh
+# environment
+CLICOLOR = 1
+# environment
+LANG = C
+# environment
+VSCODE_PID = 4907
+# environment
+NVM_RC_VERSION = 
+# variable set hash-table stats:
+# Load=87/1024=8%, Rehash=0, Collisions=3/111=3%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 16777224, inode 1993990): 16 files, no impossibilities.
+
+# 16 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+# Not a target:
+all:
+#  Command-line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+bump:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 14):
+	./bin/python bump-versions.py
+	
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-12 13:55:11
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+build:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 11):
+	grunt build
+	
+
+watch:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 8):
+	grunt watch
+	
+
+release:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 17):
+	make bump
+	
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+install:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 3):
+	npm install
+	./bin/pip install lxml
+	./bin/pip install cssselect
+	
+
+# files hash-table stats:
+# Load=9/1024=1%, Rehash=0, Collisions=0/21=0%
+# VPATH Search Paths
+
+# No `vpath' search paths.
+
+# No general (`VPATH' variable) search path.
+
+# # of strings in strcache: 1
+# # of strcache buffers: 1
+# strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
+# strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
+
+# Finished Make data base on Tue Jul 12 14:10:16 2022
+
+ 

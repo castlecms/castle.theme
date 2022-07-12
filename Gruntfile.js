@@ -19,7 +19,7 @@ module.exports = function (grunt) {
                     sourceMap: true,
                     outputSourceFiles: true,
                     compress: true,
-                    sourceMapURL: '++theme++castle.theme/css/build-compiled.css.map',
+                    sourceMapURL: '++theme++municipal/css/build-compiled.css.map',
                     sourceMapFilename: 'castle/theme/theme_resources/css/build-compiled.css.map',
                     modifyVars: {
                         "isPlone": "false"
